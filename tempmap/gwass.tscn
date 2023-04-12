@@ -2,7 +2,7 @@
 
 [ext_resource path="res://tempmap/GrassTileset.png" type="Texture" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://tempmap/cock.gd" type="Script" id=3]
+[ext_resource path="res://tempmap/Cave.gd" type="Script" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -485,6 +485,5 @@ format = 1
 
 [node name="Node" type="Node" parent="TileMap"]
 script = ExtResource( 3 )
-world_seed = "Hello"
 
-[node name="Man" parent="." instance=ExtResource( 2 )]
+[node name="player" parent="." instance=ExtResource( 2 )]
